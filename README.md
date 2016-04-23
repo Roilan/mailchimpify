@@ -8,13 +8,11 @@ When you're using React or a module that uses it as dependency it (ie: [react-ht
 ## Usage
 ```js
 var mailchimpify = require('mailchimpify');
-var div = '<div data-mc-edit="content">some text</div>;
+var div = '<div data-mc-edit="content">some text</div>';
 
 mailchimpify(div); // <div mc:edit="content">some text</div>;
 
 ```
-
-----
 
 ----
 ## License
