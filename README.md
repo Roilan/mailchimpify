@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/Roilan/mailchimpify.svg?branch=master)](https://travis-ci.org/Roilan/mailchimpify)
+
+
 ## Mailchimpify
 
 Mailchimp has custom `mc:edit` attributes that allows your custom html to be edited through their design view. This allows for non-developers, to move things around without any help. 
