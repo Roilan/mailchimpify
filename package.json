@@ -1,0 +1,29 @@
+{
+  "name": "mailchimpify",
+  "version": "0.0.1",
+  "description": "transform your data attributes to Mailchimp's custom `mc:edit`",
+  "main": "index.js",
+  "scripts": {
+    "lint": "semistandard | snazzy",
+    "run-test": "node test",
+    "test": "npm run lint && npm run run-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Roilan/mailchimpify.git"
+  },
+  "keywords": [
+    "mailchimp"
+  ],
+  "author": "Roilan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Roilan/mailchimpify/issues"
+  },
+  "homepage": "https://github.com/Roilan/mailchimpify#readme",
+  "devDependencies": {
+    "semistandard": "^7.0.5",
+    "snazzy": "^3.0.1",
+    "tape": "^4.5.1"
+  }
+}
