@@ -3,9 +3,9 @@
 
 ## Mailchimpify
 
-Mailchimp has custom `mc:edit` attributes that allows your custom html to be edited through their design view. This allows for non-developers, to move things around without any help. 
+Mailchimp's custom `mc:edit` attributes allow anyone to add, change or remove without touching code through their design view.
 
-When you're using React or a module that uses it as dependency it (ie: [react-html-email](https://github.com/chromakode/react-html-email)), it will error since `mc:edit` isn't valid. This replaces any `data-mc-edit` string with Mailchimp's `mc:edit`.
+When you're using React or a module that uses it as dependency (ie: [react-html-email](https://github.com/chromakode/react-html-email)), it will error since `mc:edit` isn't valid. This replaces any string that includes `data-mc-edit` with Mailchimp's `mc:edit`.
 
 ## Usage
 ```js
