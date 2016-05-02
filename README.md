@@ -7,6 +7,11 @@ Mailchimp's custom `mc:edit` attributes allow anyone to add, change or remove wi
 
 When you're using React or a module that uses it as dependency (ie: [react-html-email](https://github.com/chromakode/react-html-email)), it will error since `mc:edit` isn't valid. This replaces any string that includes `data-mc-edit` with Mailchimp's `mc:edit`.
 
+## Install
+```js
+npm install --save mailchimpify
+```
+
 ## Usage
 ```js
 var mailchimpify = require('mailchimpify');
