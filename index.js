@@ -1,3 +1,18 @@
+const TAGS = [
+  {
+    tagRegex: /data-mc-repeatable/g,
+    replaceText: 'mc:repeatable'
+  },
+  {
+    tagRegex: /data-mc-edit/g,
+    replaceText: 'mc:edit'
+  }
+];
+
+var replaceTag = function (str, tagRegex, replaceText) {
+  return str.replace(tagRegex, replaceText);
+};
+
 exports = module.exports = function (input) {
   input = input || '';
 
@@ -5,5 +20,9 @@ exports = module.exports = function (input) {
     throw new Error('invalid input for mailchimpify');
   }
 
-  return input.replace(/data-mc-edit/g, 'mc:edit');
+  TAGS.forEach(function (tag) {
+    input = replaceTag(input, tag.tagRegex, tag.replaceText);
+  });
+
+  return input;
 };

@@ -9,7 +9,15 @@ test('should replace `data-mc-edit` tags with `mc:edit`', function (t) {
   t.end();
 });
 
-test('should return exact string if no `data-mc-edit` is present', function (t) {
+test('should replace `data-mc-repeatable` tags with `mc:repeatable', function (t) {
+  var html = '<div data-mc-repeatable>foobaz</div>';
+  var expected = '<div mc:repeatable>foobaz</div>';
+
+  t.equal(mailchimpify(html), expected);
+  t.end();
+});
+
+test('should return exact string if no data tags are present', function (t) {
   var str = 'foo';
   var expected = 'foo';
 
