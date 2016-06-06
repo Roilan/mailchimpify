@@ -1,4 +1,4 @@
-const TAGS = [
+var TAGS = [
   {
     tagRegex: /data-mc-repeatable/g,
     replaceText: 'mc:repeatable'
@@ -9,9 +9,9 @@ const TAGS = [
   }
 ];
 
-var replaceTag = function (str, tagRegex, replaceText) {
-  return str.replace(tagRegex, replaceText);
-};
+function replaceTag (str, tag) {
+  return str.replace(tag.tagRegex, tag.replaceText);
+}
 
 exports = module.exports = function (input) {
   input = input || '';
@@ -21,7 +21,7 @@ exports = module.exports = function (input) {
   }
 
   TAGS.forEach(function (tag) {
-    input = replaceTag(input, tag.tagRegex, tag.replaceText);
+    input = replaceTag(input, tag);
   });
 
   return input;
