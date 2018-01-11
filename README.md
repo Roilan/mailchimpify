@@ -22,4 +22,4 @@ mailchimpify(div); // <div mc:edit="content">some text</div>;
 ```
 
 ## License
-[MIT](https://github.com/Roilan/mailchimpify/blob/master/LICENSE)
+[MIT](https://github.com/Roilan/mailchimpify/blob/master/LICENSE)%
