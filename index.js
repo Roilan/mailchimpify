@@ -5,5 +5,10 @@ exports = module.exports = function (input) {
     throw new Error('invalid input for mailchimpify');
   }
 
-  return input.replace(/data-mc-edit/g, 'mc:edit');
+  return input
+    .replace(/data-mc-edit/g, 'mc:edit')
+    .replace(/data-mc-hideable/g, 'mc:hideable')
+    .replace(/data-mc-repeatable/g, 'mc:repeatable')
+    .replace(/data-mc-variant/g, 'mc:variant')
+    .replace(/data-mc-label/g, 'mc:label');
 };
