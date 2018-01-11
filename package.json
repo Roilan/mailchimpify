@@ -1,6 +1,6 @@
 {
   "name": "mailchimpify",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "transform your data attributes to Mailchimp's custom `mc:edit`",
   "main": "index.js",
   "scripts": {
